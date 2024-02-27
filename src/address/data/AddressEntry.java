@@ -1,5 +1,4 @@
 package address.data;
-import java.util.LinkedList;
 
 /**
  * This class is the form the address entries will take in the book.
@@ -42,11 +41,12 @@ public class AddressEntry {
      * @param ph The phone number of the person
      * @param em The email address of the person
      */
-    public AddressEntry(String fName, String lName, String str, String st, int z, String ph, String em){
+    public AddressEntry(String fName, String lName, String str, String c, String st, int z, String ph, String em){
 
         firstName = fName;
         lastName = lName;
         street = str;
+        city = c;
         state = st;
         zip = z;
         phone = ph;
@@ -60,16 +60,16 @@ public class AddressEntry {
      */
     public String toString(){
 
-        return firstName+"\n"+lastName+"\n"+street+"\n"+state+"\n"+zip+"\n"+phone+"\n"+email+"\n\n";
-    };
+        return firstName+"\n"+lastName+"\n"+street+"\n"+city+", "+state+" "+zip+"\n"+phone+"\n"+email+"\n";
+    }
 
 
     /**
      * Changes the entries first name
-     * @param firstName name to change to
+     * @param newFirstName name to change to
      */
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setFirstName(String newFirstName) {
+        this.firstName = newFirstName;
     }
 
     /**
@@ -82,10 +82,10 @@ public class AddressEntry {
 
     /**
      * Changes the entries last name
-     * @param lastName name to change to
+     * @param NewlastName name to change to
      */
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setLastName(String NewlastName) {
+        this.lastName = NewlastName;
     }
 
     /**
@@ -98,10 +98,10 @@ public class AddressEntry {
 
     /**
      * Changes the entries city
-     * @param city name to change to
+     * @param newCity name to change to
      */
-    public void setCity(String city) {
-        this.city = city;
+    public void setCity(String newCity) {
+        this.city = newCity;
     }
 
     /**
@@ -114,10 +114,10 @@ public class AddressEntry {
 
     /**
      * Changes the entries state
-     * @param state name to change to
+     * @param newState name to change to
      */
-    public void setState(String state) {
-        this.state = state;
+    public void setState(String newState) {
+        this.state = newState;
     }
 
     /**
@@ -130,10 +130,10 @@ public class AddressEntry {
 
     /**
      * Changes the entries street
-     * @param street name to change to
+     * @param newStreet name to change to
      */
-    public void setStreet(String street) {
-        this.street = street;
+    public void setStreet(String newStreet) {
+        this.street = newStreet;
     }
 
     /**
@@ -146,10 +146,10 @@ public class AddressEntry {
 
     /**
      * Changes the entries phone number
-     * @param phone number to change to
+     * @param newPhone number to change to
      */
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setPhone(String newPhone) {
+        this.phone = newPhone;
     }
 
     /**
@@ -162,10 +162,10 @@ public class AddressEntry {
 
     /**
      * Changes the entries email address
-     * @param email email to change to
+     * @param newEmail email to change to
      */
-    public void setEmail(String email) {
-        this.email = email;
+    public void setEmail(String newEmail) {
+        this.email = newEmail;
     }
 
     /**
@@ -178,10 +178,10 @@ public class AddressEntry {
 
     /**
      * Changes the entries zip code
-     * @param zip zip code to change to
+     * @param newZip zip code to change to
      */
-    public void setZip(int zip) {
-        this.zip = zip;
+    public void setZip(int newZip) {
+        this.zip = newZip;
     }
 
     /**
